@@ -1,3 +1,4 @@
+let count = 0;
 let showBtn = false;
 
 // This is an asynchronous function for typing text to the page
@@ -38,13 +39,87 @@ function displayBtn() {
         const btn = document.createElement("button");
         btn.classList.add("start-btn")
         btn.textContent = "GET STARTED";
+        btn.setAttribute("id", "start")
         document.getElementById("container").appendChild(btn);
     }
+}
+
+// Event delegation to clear the container after the intro
+// Event delegation to see if the user clicked a choice, and if so, get the ID of the choice
+
+document.addEventListener('click',function(e){
+    if(e.target && e.target.id === 'start'){
+        document.getElementById("container").innerHTML = "";
+        askQuestions();
+    }
+
+    if(e.target && e.target.classList.value === "choice") {
+        console.log(e.target.id);
+
+        // Count starts at zero so finishing the questions means count will be one less
+        // than questionList.length
+        
+        if (count === questionList.length - 1) {
+            return;
+        }
+
+        count++;
+        askQuestions();
+        
+    }
+});
+
+const questionList = [
+    {
+        question: "What is Git?",
+        A: "Answer A",
+        B: "Answer B",
+        C: "Answer C",
+        D: "Answer D"
+    }, 
+
+    {
+        question: "What is GitHub?",
+        A: "Answer A",
+        B: "Answer B",
+        C: "Answer C",
+        D: "Answer D"
+    },
+
+    {
+        question: "What is Git?",
+        A: "Answer A",
+        B: "Answer B",
+        C: "Answer C",
+        D: "Answer D"
+    }, 
+
+]
+
+function askQuestions() {
+
+    document.getElementById("container").innerHTML = "";
+
+    const question = document.createElement("h1");
+    question.classList.add("heading");
+    question.textContent = questionList[count].question;
+    document.getElementById("container").appendChild(question);
+
+    for(let i=0; i<4; i++) {
+        const choice = document.createElement("button");
+        choice.classList.add("choice");
+        choice.id = `choice-${i}`
+        document.getElementById("container").appendChild(choice);
+    }
+
+    document.getElementById("choice-0").textContent = questionList[count].A;
+    document.getElementById("choice-1").textContent = questionList[count].B;
+    document.getElementById("choice-2").textContent = questionList[count].C;
+    document.getElementById("choice-3").textContent = questionList[count].D;
+
 }
 
 // Calls the function that types the text with the correct parameters
 
 typeText("This quiz will test your knowledge on using Git in the command line. Having a working knowledge of common Git commands can save time and prevent mistakes, especially when working collaboratively with other developers. Ready to begin?", 
-"typing-text", 50);
-
-
+"typing-text", 20);
