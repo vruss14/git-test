@@ -54,11 +54,19 @@ document.addEventListener('click',function(e){
     }
 
     if(e.target && e.target.classList.value === "choice") {
-        console.log(e.target.id);
+
+        // Checks if the user's answer (one of the choice buttons) matches
+        // the value for the correct answer in the questionList object
+        
+        if(e.target.textContent === questionList[count].correct) {
+            console.log("You're right!");
+        } else {
+            console.log("Incorrect.");
+        }
 
         // Count starts at zero so finishing the questions means count will be one less
         // than questionList.length
-        
+
         if (count === questionList.length - 1) {
             return;
         }
@@ -75,7 +83,8 @@ const questionList = [
         A: "Answer A",
         B: "Answer B",
         C: "Answer C",
-        D: "Answer D"
+        D: "Answer D",
+        correct: "Answer A"
     }, 
 
     {
@@ -83,7 +92,8 @@ const questionList = [
         A: "Answer A",
         B: "Answer B",
         C: "Answer C",
-        D: "Answer D"
+        D: "Answer D",
+        correct: "Answer B"
     },
 
     {
@@ -91,7 +101,8 @@ const questionList = [
         A: "Answer A",
         B: "Answer B",
         C: "Answer C",
-        D: "Answer D"
+        D: "Answer D",
+        correct: "Answer C"
     }, 
 
 ]
