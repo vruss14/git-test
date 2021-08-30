@@ -1,4 +1,5 @@
 let count = 0;
+let score = 0;
 let showBtn = false;
 
 // This is an asynchronous function for typing text to the page
@@ -60,6 +61,7 @@ document.addEventListener('click',function(e){
 
         if(e.target.textContent === questionList[count].correct) {
             console.log("You're right!");
+            score++;
         } else {
             console.log("Incorrect.");
         }
@@ -68,6 +70,7 @@ document.addEventListener('click',function(e){
         // than questionList.length
 
         if (count === questionList.length - 1) {
+            console.log(`Your score was: ${score} / ${questionList.length}`)
             return;
         }
 
@@ -97,7 +100,7 @@ const questionList = [
     },
 
     {
-        question: "What happens when you run git --help --all or git--help -a in your present working directory?",
+        question: "What happens when you run git --help --all or git --help -a in your present working directory?",
         A: "This is an invalid command will result in an error.",
         B: "A list of all available commands is printed.",
         C: "A list of all frequently asked questions about Git is printed.",
@@ -116,10 +119,10 @@ const questionList = [
 
     {
         question: "In Git, what is the difference between a porcelain command and a plumbing command?",
-        A: "Porcelain commands less commonly used by developers than plumbing commands.",
-        B: "Porcelain commands are low level commands that can access the inner workings of Git, while plumbing commands are high level and user-friendly.",
+        A: "Porcelain commands are less commonly used by developers than plumbing commands.",
+        B: "Plumbing commands cannot access the inner workings of Git.",
         C: "There is no difference between a porcelain and plumbing command.",
-        D: "Porcelain commands are high level, user-friendly commands, while plumbing commands are low level and can access the inner workings of Git.",
+        D: "Porcelain commands are high level, user-friendly commands.",
         correct: "Porcelain commands are high level, user-friendly commands, while plumbing commands are low level and can access the inner workings of Git."
     },
     
@@ -145,16 +148,7 @@ const questionList = [
         question: "What happens when you run git add in your present working directory after editing a file?",
         A: "The file will be added to the staging area.",
         B: "The phrase 'Nothing specified, nothing added.' will print because no files were selected.",
-        C: "All edited files in the present working directory will be added to the staging area.",
-        D: "The edits will be directly transferred to the upstream remote.",
-        correct: "The phrase 'Nothing specified, nothing added.' will print because no files were selected."
-    },
-
-    {
-        question: "What happens when you run git add in your present working directory after editing a file?",
-        A: "The file will be added to the staging area.",
-        B: "The phrase 'Nothing specified, nothing added.' will print because no files were selected.",
-        C: "All edited files in the present working directory will be added to the staging area.",
+        C: "All edited files in the directory are added to the staging area.",
         D: "The edits will be directly transferred to the upstream remote.",
         correct: "The phrase 'Nothing specified, nothing added.' will print because no files were selected."
     },
