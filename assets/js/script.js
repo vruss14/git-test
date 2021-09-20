@@ -128,15 +128,6 @@ const questionList = [
     },
 
     {
-        question: "Which of these are advantages of Git?",
-        A: "Offline capabilities.",
-        B: "Integrity",
-        C: "Difficult to lose committed changes",
-        D: "All of the above",
-        correct: "All of the above"
-    },
-
-    {
         question: "Which of these is NOT a state of a file in Git?",
         A: "Updated",
         B: "Modified",
@@ -293,15 +284,6 @@ const questionList = [
 
     {
         question: "How would you delete a branch through Git?",
-        A: "git branch --clear",
-        B: "git branch --destroy",
-        C: "git branch --remove",
-        D: "git branch --delete",
-        correct: "git branch --delete"
-    },
-
-    {
-        question: "How would you create a new branch through Git?",
         A: "git branch --clear",
         B: "git branch --destroy",
         C: "git branch --remove",
