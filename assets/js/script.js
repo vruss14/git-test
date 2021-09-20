@@ -81,6 +81,108 @@ document.addEventListener('click',function(e){
 });
 
 const questionList = [
+
+    {
+        question: "Which of these is NOT an advantage of a version control system?",
+        A: "You can revert selected files back to a previous state.",
+        B: "You can compare changes over time.",
+        C: "You can see where issues were introduced into a project.",
+        D: "Previous versions of a file are not saved.",
+        correct: "Previous versions of a file are not saved."
+    },
+
+    {
+        question: "What kind of version control system is Git?",
+        A: "A Local Version Control System",
+        B: "A Centralized Version Control System (CVCS)",
+        C: "A Distributed Version Control System (DVCS)",
+        D: "An Executive Version Control System (EVCS)",
+        correct: "A Distributed Version Control System (DVCS)"
+    },
+
+    {
+        question: "What is unique about a DVCS?",
+        A: "Clients fully mirror a repo, including the full history.",
+        B: "Clients check out the latest version of the files.",
+        C: "Clients copy every branch in a repo.",
+        D: "Clients copy all public branches in a repo.",
+        correct: "Clients fully mirror a repo, including the full history."
+    },
+
+    {
+        question: "How does Git think about data?",
+        A: "As a list of file-based changes.",
+        B: "Like a Python dictionary.",
+        C: "Like a JSON object.",
+        D: "A stream of snapshots of the files in a project.",
+        correct: "A stream of snapshots of the files in a project."
+    },
+
+    {
+        question: "Which of these are advantages of Git?",
+        A: "Offline capabilities.",
+        B: "Integrity",
+        C: "Difficult to lose committed changes",
+        D: "All of the above",
+        correct: "All of the above"
+    },
+
+    {
+        question: "Which of these are advantages of Git?",
+        A: "Offline capabilities.",
+        B: "Integrity",
+        C: "Difficult to lose committed changes",
+        D: "All of the above",
+        correct: "All of the above"
+    },
+
+    {
+        question: "Which of these is NOT a state of a file in Git?",
+        A: "Updated",
+        B: "Modified",
+        C: "Staged",
+        D: "Committed",
+        correct: "Updated"
+    },
+
+    {
+        question: "What is a modified file in Git?",
+        A: "A file that has been changed and committed.",
+        B: "A file that has been changed but not committed.",
+        C: "A file that has been added.",
+        D: "A file that has been deleted.",
+        correct: "A file that has been changed but not committed."
+    },
+
+    {
+        question: "What is a staged file in Git?",
+        A: "A modified file that is marked to be committed.",
+        B: "An added file to a project.",
+        C: "A file that has been changed and committed.",
+        D: "A file that has been changed.",
+        correct: "A modified file that is marked to be committed."
+    },
+
+    {
+        question: "What is a committed file in Git?",
+        A: "A file that has been pushed to the upstream remote.",
+        B: "A file with data safely stored in the database.",
+        C: "A changed file.",
+        D: "A file that cannot be deleted from the repo.",
+        correct: "A file with data safely stored in the database."
+    },
+
+    // Next questions: Working tree, staging area
+
+    // {
+    //     question: "",
+    //     A: "",
+    //     B: "",
+    //     C: "",
+    //     D: "",
+    //     correct: ""
+    // },
+
     {
         question: "What happens when you run git --version in your present working directory?",
         A: "The version of git your computer is currently using will be printed.",
@@ -178,6 +280,33 @@ const questionList = [
         C: "An indication of which version of Git is running on your local computer.",
         D: "A boolean value of true or false.",
         correct: "A summary of which files have changes staged for the next commit."
+    },
+
+    {
+        question: "What happens when you run git branch?",
+        A: "A new branch is added.",
+        B: "A list of branches is displayed, with the current branch selected.",
+        C: "A branch is split into an old and new version.",
+        D: "The branch with the most contributions is displayed.",
+        correct: "A list of branches is displayed, with the current branch selected."
+    },
+
+    {
+        question: "How would you delete a branch through Git?",
+        A: "git branch --clear",
+        B: "git branch --destroy",
+        C: "git branch --remove",
+        D: "git branch --delete",
+        correct: "git branch --delete"
+    },
+
+    {
+        question: "How would you create a new branch through Git?",
+        A: "git branch --clear",
+        B: "git branch --destroy",
+        C: "git branch --remove",
+        D: "git branch --delete",
+        correct: "git branch --delete"
     },
 
 ]

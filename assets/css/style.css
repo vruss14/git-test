@@ -50,8 +50,9 @@ body {
 }
 
 .heading {
-    margin-bottom: 2rem;
     font-size: 36px;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
 }
 
 .choice {
