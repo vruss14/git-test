@@ -163,16 +163,59 @@ const questionList = [
         correct: "A file with data safely stored in the database."
     },
 
-    // Next questions: Working tree, staging area
+    {
+        question: "What is the working tree?",
+        A: "The backlog of tasks for developers to work on.",
+        B: "A collection of all the versions of a project.",
+        C: "A single checkout of one version of a project.",
+        D: "A list of staged commits.",
+        correct: "A single checkout of one version of a project."
+    },
 
-    // {
-    //     question: "",
-    //     A: "",
-    //     B: "",
-    //     C: "",
-    //     D: "",
-    //     correct: ""
-    // },
+    {
+        question: "In the context of Git, what is an index?",
+        A: "A unique identifier for each commit, which is displayed in the git history.",
+        B: "A list of all previous commits in the present working directory.",
+        C: "A list of all possible git commands that can be run in the command line.",
+        D: "A snapshot of the content of the working tree.",
+        correct: "A snapshot of the content of the working tree."
+    },
+
+    {
+        question: "What is the staging area?",
+        A: "A file that stores info about the next commit.",
+        B: "A history of all previous commits.",
+        C: "A list of untracked files.",
+        D: "A list of all files in a project.",
+        correct: "A file that stores info about the next commit."
+    },
+
+    {
+        question: "What is copied when you clone a repository?",
+        A: "A working tree.",
+        B: "A new branch.",
+        C: "Only the files of interest.",
+        D: "The Git directory.",
+        correct: "The Git directory."
+    },
+
+    {
+        question: "What command lets you set your Git username and email?",
+        A: "git set",
+        B: "git user",
+        C: "git config",
+        D: "git add user",
+        correct: "git config"
+    },
+
+    {
+        question: "How do you check your configuration settings?",
+        A: "git config --v",
+        B: "git config --show",
+        C: "git config --list",
+        D: "git config --settings",
+        correct: "git config --list"
+    },
 
     {
         question: "What happens when you run git --version in your present working directory?",
@@ -199,15 +242,6 @@ const questionList = [
         C: "A list of all frequently asked questions about Git is printed.",
         D: "A link to the Git homepage is printed.",
         correct: "A list of all available commands is printed."
-    }, 
-
-    {
-        question: "To read more about a specific subcommand, what Git command can you use?",
-        A: "git help --all",
-        B: "git help <command>",
-        C: "git read <command>",
-        D: "git info <command>",
-        correct: "git help <command>"
     },
 
     {
@@ -238,6 +272,42 @@ const questionList = [
     },
 
     {
+        question: "To read more about a specific subcommand, what Git command can you use?",
+        A: "git help --all",
+        B: "git help <command>",
+        C: "git read <command>",
+        D: "git info <command>",
+        correct: "git help <command>"
+    },
+
+    {
+        question: "What command pulls down an entire history of a project?",
+        A: "git copy",
+        B: "git clone",
+        C: "git checkout",
+        D: "git pull --history",
+        correct: "git clone"
+    },
+
+    {
+        question: "What is the difference between a tracked and untracked file?",
+        A: "You cannot commit untracked files.",
+        B: "Untracked files have no changes/edits.",
+        C: "Git cannot recognize an untracked file.",
+        D: "Tracked files are files Git knows about.",
+        correct: "Tracked files are files Git knows about."
+    },
+
+    {
+        question: "What information do you gain from running git status?",
+        A: "A summary of which files have changes staged for the next commit.",
+        B: "A list of all possible git commands that can be run in the command line.",
+        C: "An indication of which version of Git is running on your local computer.",
+        D: "A boolean value of true or false.",
+        correct: "A summary of which files have changes staged for the next commit."
+    },
+
+    {
         question: "What happens when you run git add in your present working directory after editing a file?",
         A: "The file will be added to the staging area.",
         B: "The phrase 'Nothing specified, nothing added.' will print because no files were selected.",
@@ -255,23 +325,41 @@ const questionList = [
         correct: "To update the index with current content in the working tree and prepare that content for the next commit."
     },
 
-    {
-        question: "In the context of Git, what is an index?",
-        A: "A unique identifier for each commit, which is displayed in the git history.",
-        B: "A list of all previous commits in the present working directory.",
-        C: "A list of all possible git commands that can be run in the command line.",
-        D: "A snapshot of the content of the working tree.",
-        correct: "A snapshot of the content of the working tree."
-    },
+    // {
+    //     question: "",
+    //     A: "",
+    //     B: "",
+    //     C: "",
+    //     D: "",
+    //     correct: ""
+    // },
 
-    {
-        question: "What information do you gain from running git status?",
-        A: "A summary of which files have changes staged for the next commit.",
-        B: "A list of all possible git commands that can be run in the command line.",
-        C: "An indication of which version of Git is running on your local computer.",
-        D: "A boolean value of true or false.",
-        correct: "A summary of which files have changes staged for the next commit."
-    },
+    // {
+    //     question: "",
+    //     A: "",
+    //     B: "",
+    //     C: "",
+    //     D: "",
+    //     correct: ""
+    // },
+
+    // {
+    //     question: "",
+    //     A: "",
+    //     B: "",
+    //     C: "",
+    //     D: "",
+    //     correct: ""
+    // },
+
+    // {
+    //     question: "",
+    //     A: "",
+    //     B: "",
+    //     C: "",
+    //     D: "",
+    //     correct: ""
+    // },
 
     {
         question: "What happens when you run git branch?",
