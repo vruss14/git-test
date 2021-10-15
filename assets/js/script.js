@@ -325,14 +325,59 @@ const questionList = [
         correct: "To update the index with current content in the working tree and prepare that content for the next commit."
     },
 
-    // {
-    //     question: "",
-    //     A: "",
-    //     B: "",
-    //     C: "",
-    //     D: "",
-    //     correct: ""
-    // },
+    {
+        question: "Why could a file be listed as both staged and unstaged?",
+        A: "This is the default for untracked files.",
+        B: "If you have made additional changes after running git add.",
+        C: "The file was deleted.",
+        D: "A file cannot be listed as both unstaged and unstaged.",
+        correct: "If you have made additional changes after running git add."
+    },
+
+    {
+        question: "How would you see a simplied version of git status?",
+        A: "git status -s or git status --short",
+        B: "git status --simple",
+        C: "git status --S or git status --simple",
+        D: "git status --overview",
+        correct: "git status -s or git status --short"
+    },
+
+    {
+        question: "What is the purpose of a .gitignore file?",
+        A: "Create a private repository.",
+        B: "Hide one particular version of a repository.",
+        C: "Stop Git from tracking an entire project.",
+        D: "Prevent Git from automatically adding certain files.",
+        correct: "Prevent Git from automatically adding certain files."
+    },
+
+    {
+        question: "What command lets you see what you've changed but not yet staged and what you've staged that you're about to commit?",
+        A: "git compare",
+        B: "git view",
+        C: "git diff",
+        D: "git status",
+        correct: "git diff"
+    },
+
+    {
+        question: "What happens if you run git commit without the -m flag?",
+        A: "Your default editor is launched, such as Vim.",
+        B: "The command will fail with an error.",
+        C: "Changes will be committed with an empty commit message.",
+        D: "You will be prompted with a series of questions about your changes.",
+        correct: "Your default editor is launched, such as Vim."
+    },
+
+    {
+        question: "What command lets you skip the staging area?",
+        A: "git commit -a",
+        B: "git commit --all",
+        C: "git commit --complete",
+        D: "git commit --skip",
+        correct: "git commit -a"
+    },
 
     // {
     //     question: "",
