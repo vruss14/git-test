@@ -379,32 +379,114 @@ const questionList = [
         correct: "git commit -a"
     },
 
-    // {
-    //     question: "",
-    //     A: "",
-    //     B: "",
-    //     C: "",
-    //     D: "",
-    //     correct: ""
-    // },
+    {
+        question: "What command lets you keep a file on your compute and not have Git track it anymore?",
+        A: "git delete",
+        B: "git rm --cached",
+        C: "git resolve",
+        D: "git rm",
+        correct: "git rm --cached"
+    },
 
-    // {
-    //     question: "",
-    //     A: "",
-    //     B: "",
-    //     C: "",
-    //     D: "",
-    //     correct: ""
-    // },
+    {
+        question: "What displays when you run git log with no arguments?",
+        A: "A summary log of possible Git commands.",
+        B: "A log of the five previous Git commands you have entered.",
+        C: "A list of the commits made in the repo, in chronological order.",
+        D: "A list of the commits made in the repo, in reverse chronological order.",
+        correct: "A list of the commits made in the repo, in reverse chronological order."
+    },
 
-    // {
-    //     question: "",
-    //     A: "",
-    //     B: "",
-    //     C: "",
-    //     D: "",
-    //     correct: ""
-    // },
+    {
+        question: "How is git log --patch different from git log?",
+        A: "It patches together the three most recent commits.",
+        B: "It displays a 'patch', meaning the most important changes.",
+        C: "It shows the difference introduced in each commit.",
+        D: "It only shows the latest commit instead of all of them.",
+        correct: "It shows the difference introduced in each commit."
+    },
+
+
+    {
+        question: "What additional info can you learn from the git log --stat command?",
+        A: "List of modified files, # files changed, lines added/removed",
+        B: "List of modified files",
+        C: "# files changed",
+        D: "Lines added/removed",
+        correct: "List of modified files, # files changed, lines added/removed"
+    },
+
+    {
+        question: "What command allows you to redo a commit?",
+        A: "git commit --redo",
+        B: "git commit --edit",
+        C: "git commit --amend",
+        D: "git commit --delete",
+        correct: "git commit --amend"
+    },
+
+    {
+        question: "Which two commands all you to undo things in Git?",
+        A: "git reset and git undo",
+        B: "git reset and git restore",
+        C: "git restore and git undo",
+        D: "git resolve and git retrace",
+        correct: "git reset and git restore"
+    },
+
+    {
+        question: "What happens when you run git remote --v?",
+        A: "You see the word 'origin'.",
+        B: "You see the version of Git you have installed.",
+        C: "You see the remote's URLs that Git has stored.",
+        D: "You see an error.",
+        correct: "You see the remote's URLs that Git has stored."
+    },
+
+    {
+        question: "In Git, what is a lightweight tag?",
+        A: "A pointer to a specific commit.",
+        B: "A full object in the Git database.",
+        C: "An array of the five most recent commits.",
+        D: "A JSON object that records events.",
+        correct: "A pointer to a specific commit."
+    },
+
+    {
+        question: "In Git, what is an annotated tag?",
+        A: "A commit with extra room to leave comments.",
+        B: "A detailed summary about the latest commit.",
+        C: "A pointer to a specific commit.",
+        D: "A full object in the Git database.",
+        correct: "A full object in the Git database."
+    },
+
+    {
+        question: "How do you create an annotated tag in Git?",
+        A: "git tag -m \"message\"",
+        B: "git tag -m",
+        C: "git tag -a TAGNAME -m \"message\"",
+        D: "git tag",
+        correct: "git tag -a TAGNAME -m \"message\""
+    },
+
+    {
+        question: "How do you create a lightweight tag in Git?",
+        A: "git tag -m \"message\"",
+        B: "git tag TAGNAME",
+        C: "git tag",
+        D: "git tag -a TAGNAME -m \"message\"",
+        correct: "git tag TAGNAME"
+    },
+
+    {
+        question: "How do you transfer tags to a remote server?",
+        A: "Git does this by default when you push code to a repo.",
+        B: "git push origin <tagname> or git push origin --tags",
+        C: "git push origin tags",
+        D: "git push --a",
+        correct: "git push origin <tagname> or git push origin --tags"
+    },
 
     {
         question: "What happens when you run git branch?",
@@ -423,6 +505,51 @@ const questionList = [
         D: "git branch --delete",
         correct: "git branch --delete"
     },
+
+    // {
+    //     question: "",
+    //     A: "",
+    //     B: "",
+    //     C: "",
+    //     D: "",
+    //     correct: ""
+    // },
+
+    // {
+    //     question: "",
+    //     A: "",
+    //     B: "",
+    //     C: "",
+    //     D: "",
+    //     correct: ""
+    // },
+
+    // {
+    //     question: "",
+    //     A: "",
+    //     B: "",
+    //     C: "",
+    //     D: "",
+    //     correct: ""
+    // },
+
+    // {
+    //     question: "",
+    //     A: "",
+    //     B: "",
+    //     C: "",
+    //     D: "",
+    //     correct: ""
+    // },
+
+    // {
+    //     question: "",
+    //     A: "",
+    //     B: "",
+    //     C: "",
+    //     D: "",
+    //     correct: ""
+    // },
 
 ]
 
