@@ -506,14 +506,125 @@ const questionList = [
         correct: "git branch --delete"
     },
 
-    // {
-    //     question: "",
-    //     A: "",
-    //     B: "",
-    //     C: "",
-    //     D: "",
-    //     correct: ""
-    // },
+    {
+        question: "What is a blob?",
+        A: "A staged commit.",
+        B: "The total amount of changes made in a series of files.",
+        C: "A version of a file in a Git repository.",
+        D: "An unstaged file.",
+        correct: "A version of a file in a Git repository."
+    },
+
+    {
+        question: "What is the default branch name in Git?",
+        A: "main",
+        B: "master",
+        C: "default",
+        D: "original",
+        correct: "master"
+    },
+
+    {
+        question: "In Git, what does HEAD refer to?",
+        A: "The branch you're currently on.",
+        B: "The master branch.",
+        C: "A feature branch of your choosing.",
+        D: "The repository as a whole.",
+        correct: "The branch you're currently on."
+    },
+
+    {
+        question: "What command would allow you to switch back to the main branch?",
+        A: "git switch main",
+        B: "git checkout main",
+        C: "git branch main",
+        D: "git home",
+        correct: "git checkout main"
+    },
+
+    {
+        question: "What command lets you see a history of your commits AND how your history has diverged? ",
+        A: "git log",
+        B: "git log history --oneline",
+        C: "git log history --all",
+        D: "git log --oneline --decorate --graph --all",
+        correct: "git log --oneline --decorate --graph --all"
+    },
+
+    {
+        question: "What command allows you to create a new branch and switch to it at the same time?",
+        A: "git checkout -b feature-branch",
+        B: "git branch feature-branch",
+        C: "git checkout feature-branch",
+        D: "git branch --checkout feature-branch",
+        correct: "git checkout -b feature-branch"
+    },
+
+    {
+        question: "What is a fast forward in Git?",
+        A: "When Git moves the pointer forward because there's no divergent work to merge together.",
+        B: "It is synonymous with a git pull.",
+        C: "It is equivalent to git fetch.",
+        D: "It deletes the current version of a repo and replaces it with an updated version.",
+        correct: "When Git moves the pointer forward because there's no divergent work to merge together."
+    },
+
+    {
+        question: "What is the recursive strategy?",
+        A: "Merging when more than one valid ancestor is found.",
+        B: "When Git simply moves the pointer forward.",
+        C: "A rare merging strategy.",
+        D: "None of the above.",
+        correct: "Merging when more than one valid ancestor is found."
+    },
+
+    {
+        question: "What is a merge conflict?",
+        A: "When a file is missing key information that Git requires.",
+        B: "It's what happens when admin privileges to push code are restricted.",
+        C: "When the same file is changed differently in the branches being merged.",
+        D: "An unexpected error when running git merge.",
+        correct: "When the same file is changed differently in the branches being merged."
+    },
+
+    {
+        question: "What is a topic branch?",
+        A: "Another name for the main/master branch.",
+        B: "A short-lived branch used for a single feature.",
+        C: "A long-lived branch used for multiple features.",
+        D: "A branch that has only one file with edit access at any given time.",
+        correct: "A short-lived branch used for a single feature."
+    },
+
+
+    {
+        question: "How is git pull different from git fetch?",
+        A: "git fetch modifies your working directory automatically.",
+        B: "git pull is like running git fetch then git merge",
+        C: "git fetch only works with APIs.",
+        D: "The commands are completely interchangeable.",
+        correct: "git pull is like running git fetch then git merge"
+    },
+
+
+    {
+        question: "What is rebasing in Git?",
+        A: "It is the same as a git merge.",
+        B: "It restores a branch to the previous commit.",
+        C: "It creates a new rebase branch that tracks divergent history from main.",
+        D: "Taking the changes committed on one branch and replaying them on a different branch.",
+        correct: "Taking the changes committed on one branch and replaying them on a different branch."
+    },
+
+
+    {
+        question: "What should you avoid when rebasing in Git?",
+        A: "Rebasing commits within your personal main branch.",
+        B: "Rebasing commits on untracked files.",
+        C: "Rebasing commits outside your repo that others may have based work on.",
+        D: "Rebasing has no drawbacks and can be used at any time.",
+        correct: "Rebasing commits outside your repo that others may have based work on."
+    },
 
     // {
     //     question: "",
@@ -542,14 +653,6 @@ const questionList = [
     //     correct: ""
     // },
 
-    // {
-    //     question: "",
-    //     A: "",
-    //     B: "",
-    //     C: "",
-    //     D: "",
-    //     correct: ""
-    // },
 
 ]
 
