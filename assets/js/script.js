@@ -626,34 +626,41 @@ const questionList = [
         correct: "Rebasing commits outside your repo that others may have based work on."
     },
 
-    // {
-    //     question: "",
-    //     A: "",
-    //     B: "",
-    //     C: "",
-    //     D: "",
-    //     correct: ""
-    // },
+    {
+        question: "How should you split up your commits?",
+        A: "It's best practice to commit once for all changes you make.",
+        B: "Do at least one commit per issue.",
+        C: "Do at least 10 commits.",
+        D: "Commit once a week.",
+        correct: "Do at least one commit per issue."
+    },
 
-    // {
-    //     question: "",
-    //     A: "",
-    //     B: "",
-    //     C: "",
-    //     D: "",
-    //     correct: ""
-    // },
+    {
+        question: "Which of these is NOT an attribute of a goood quality commit message?",
+        A: "The first line should be a concise summary.",
+        B: "Write the commit message in the imperative.",
+        C: "Include a detailed explanation about the changes.",
+        D: "Use abbreviations wherever possible.",
+        correct: "Use abbreviations wherever possible."
+    },
 
-    // {
-    //     question: "",
-    //     A: "",
-    //     B: "",
-    //     C: "",
-    //     D: "",
-    //     correct: ""
-    // },
+    {
+        question: "What is a cherry-pick in Git?",
+        A: "Takes the commit history and highlights the ones with the most lines changed.",
+        B: "It is a repo with only files that pass all tests in Git.",
+        C: "It is identical to git rebase.",
+        D: "Takes a patch introduced in a commit and tries to reapply it on the branch you're currently on.",
+        correct: "Takes a patch introduced in a commit and tries to reapply it on the branch you're currently on."
+    },
 
-
+    {
+        question: "What does git stash do?",
+        A: "Saves a new copy of the repository.",
+        B: "Saves your modified files when you don't want to commit unfinished work but need to switch branches.",
+        C: "Stashes the .gitignore file.",
+        D: "Stashes the public directory in your repo.",
+        correct: "Saves your modified files when you don't want to commit unfinished work but need to switch branches."
+    },
 ]
 
 function askQuestions() {
