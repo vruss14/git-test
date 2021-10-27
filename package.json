@@ -1,0 +1,30 @@
+{
+  "name": "git-test",
+  "version": "1.0.0",
+  "description": "A series of test questions on using Git in the command line.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seeds/seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vruss14/git-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vruss14/git-test/issues"
+  },
+  "homepage": "https://github.com/vruss14/git-test#readme",
+  "dependencies": {
+    "connect-session-sequelize": "^7.1.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.2",
+    "sequelize": "^6.8.0"
+  }
+}
