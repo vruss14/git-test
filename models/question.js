@@ -13,6 +13,7 @@ Question.init(
     },
     question: {
       type: DataTypes.STRING,
+      unique: true
     },
     A: {
         type: DataTypes.STRING,
