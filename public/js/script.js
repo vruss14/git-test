@@ -1,6 +1,19 @@
+let questionList;
 let count = 0;
 let score = 0;
 let showBtn = false;
+
+async function retrieveQuestions() {
+    const response = await fetch("/api/questions", {
+        method: "GET",
+    }).then(function(data) {
+        return data.json();
+    }).then(function(data) {
+        questionList = data;
+    })
+}
+
+retrieveQuestions();
 
 // This is an asynchronous function for typing text to the page
 // The function accepts 3 parameters: a sentence, an element to append the text to, and
@@ -79,8 +92,6 @@ document.addEventListener('click',function(e){
         
     }
 });
-
-// MODIFY TO PULL QUESTIONS FROM DATABASE
 
 function askQuestions() {
 
