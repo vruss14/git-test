@@ -1,2 +1,2 @@
-const Question = require('./Question');
+const Question = require('./question');
 module.exports = { Question };
