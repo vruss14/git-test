@@ -4,7 +4,6 @@
   "description": "A series of test questions on using Git in the command line.",
   "main": "index.js",
   "scripts": {
-    "build": "sequelize db:migrate --env production",
     "start": "node server.js",
     "seed": "node seeds/seed.js",
     "test": "echo \"Error: no test specified\" && exit 1"
