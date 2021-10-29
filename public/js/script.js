@@ -1,7 +1,8 @@
 let questionList;
 let count = 0;
 let score = 0;
-let showBtn = false;
+
+// Retrieves all the questions stored in the MySQL database
 
 async function retrieveQuestions() {
     const response = await fetch("/api/questions", {
@@ -37,10 +38,6 @@ async function typeText(sentence, elementId, delay = 100) {
         const letterNode = document.createTextNode(letters[i])
         element.appendChild(letterNode);
     }
-
-    showBtn = true;
-    displayBtn();
-
     return;
 }
 
@@ -48,14 +45,14 @@ function delayTyping(delay) {
     return new Promise(resolve => setTimeout(resolve, delay))
 }
 
-function displayBtn() {
-    if (showBtn) {
-        const btn = document.createElement("button");
-        btn.classList.add("start-btn")
-        btn.textContent = "GET STARTED";
-        btn.setAttribute("id", "start")
-        document.getElementById("container").appendChild(btn);
-    }
+async function displayBtn() {
+    const response = await typeText("This quiz will test your knowledge on using Git in the command line. Ready to begin?", 
+    "typing-text", 50);
+    const btn = document.createElement("button");
+    btn.classList.add("start-btn")
+    btn.textContent = "GET STARTED";
+    btn.setAttribute("id", "start")
+    document.getElementById("container").appendChild(btn);
 }
 
 // Event delegation to clear the container after the intro
@@ -73,28 +70,38 @@ document.addEventListener('click',function(e){
         // the value for the correct answer in the questionList object
 
         if(e.target.textContent === questionList[count].correct) {
-            console.log("You're right!");
             score++;
-        } else {
-            console.log("Incorrect.");
         }
 
-        // Count starts at zero so finishing the questions means count will be one less
-        // than questionList.length
+        // Count starts at zero so finishing the questions means count will be one less than questionList.length
 
         if (count === questionList.length - 1) {
-            console.log(`Your score was: ${score} / ${questionList.length}`)
+            displayScore();
             return;
         }
-
         count++;
         askQuestions();
-        
     }
 });
 
-function askQuestions() {
+function displayScore() {
+    document.getElementById("container").innerHTML = "";
+    const div = document.createElement('div');
+    div.setAttribute('id', 'typing-wrapper');
+    document.getElementById('container').appendChild(div);
 
+    const typingText = document.createElement('span');
+    typingText.setAttribute('id', 'typing-text');
+    div.appendChild(typingText);
+
+    const typingCursor = document.createElement('span');
+    typingCursor.setAttribute('id', 'typing-cursor');
+    div.appendChild(typingCursor);
+
+    typeText(`Your score is: ${score} / ${questionList.length}`, "typing-text", 50);
+}
+
+function askQuestions() {
     document.getElementById("container").innerHTML = "";
 
     const question = document.createElement("h1");
@@ -116,7 +123,7 @@ function askQuestions() {
 
 }
 
-// Calls the function that types the text with the correct parameters
+// On page load, the function to display the button is called, which occurs after all the intro text is typed out
+// because of the async/await structure
 
-typeText("This quiz will test your knowledge on using Git in the command line. Ready to begin?", 
-"typing-text", 50);
+displayBtn();
